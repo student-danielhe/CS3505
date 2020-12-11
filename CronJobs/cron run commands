@@ -1,0 +1,23 @@
+
+sudo service crond start
+crontab -l
+export VISUAL='nano'
+crontab -e
+
+#copy the following into the nano file:
+0 * * * * /usr/bin/python3 /home/ec2-user/environment/CarloFolder/stockPrice.py >> /home/ec2-user/environment/CarloFolder/cron.log 2>&1 (working)
+* * * * * /home/ec2-user/environment/NatesFolder/Spotify/spotify >> /home/ec2-user/environment/NatesFolder/cron.log 2>&1 (not working)
+#10 0-22 * * * cd  /home/ec2-user/environment/Ja-ReysFolder/ && node server.js >> /home/ec2-user/environment/Ja-ReysFolder/cron.log 2>&1
+* * * * * /usr/bin/python3 /home/ec2-user/environment/DanielFolder/debt.py >> /home/ec2-user/environment/DanielFolder/cron.log 2>&1 (working)
+* * * * * /usr/bin/python3 /home/ec2-user/environment/JakesFolder/bitcoin.py >> /home/ec2-user/environment/JakesFolder/cron.log 2>&1 (working)
+
+#then type Control + X to save
+#press y for yes
+#then press enter
+
+cd /var/spool/mail
+cat ec2-user
+
+#to get rid of persmisison denied 
+chmod +x /home/user/Location/Of/Script
+

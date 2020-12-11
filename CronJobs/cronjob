@@ -1,0 +1,5 @@
+* * * * * /usr/bin/python3 /home/ec2-user/environment/CarloFolder/stockPrice.py >> /home/ec2-user/environment/CarloFolder/cron.log 2>&1
+* * * * * /home/ec2-user/environment/NatesFolder/Spotify/spotify >> /home/ec2-user/environment/NatesFolder/cron.log 
+* * * * * /home/ec2-user/environment/Ja-ReysFolder/server.js >> /home/ec2-user/environment/Ja-ReysFolder/cron.log 
+* * * * * /home/ec2-user/environment/DanielFolder/debt.py >> /home/ec2-user/environment/DanielFolder/cron.log 
+* * * * * /home/ec2-user/environment/JakesFolder/bitcoin.py >> /home/ec2-user/environment/JakesFolder/cron.log

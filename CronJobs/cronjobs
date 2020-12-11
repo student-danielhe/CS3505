@@ -1,0 +1,8 @@
+# To execute the cron jobs run "crontab -e" then copy the commands below into the crontab file. 
+
+#0 0-22 * * *  /usr/bin/python3 /home/ec2-user/environment/CarloFolder/stockPrice.py >> /home/ec2-user/environment/CarloFolder/cron.log  2>&1
+#5 0-22 * * * /home/ec2-user/environment/NatesFolder/Spotify/spotify >> /home/ec2-user/environment/NatesFolder/cron.log 2>&1
+#10 0-22 * * * cd  /home/ec2-user/environment/Ja-ReysFolder/ && node server.js >> /home/ec2-user/environment/Ja-ReysFolder/cron.log 2>&1
+#15 0-22 * * * /usr/bin/python3 /home/ec2-user/environment/DanielFolder/debt.py >> /home/ec2-user/environment/DanielFolder/cron.log 2>&1
+#20 0-22 * * * /usr/bin/python3 /home/ec2-user/environment/JakesFolder/Bitcoin.py >> /home/ec2-user/environment/JakesFolder/cron.log 2>&1
+#25 0-22 * * * /usr/bin/python3 /home/ec2-user/environment/AlecsFolder/SteamNumbers.py >> /home/ec2-user/environment/AlecsFolder/cron.log 2>&1 
